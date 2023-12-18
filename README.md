@@ -15,6 +15,7 @@ Desenvolvimento e Submissão de Soluções para o Desafio House Kaggle
 5. Descrição dos requisitos para o desenvolvimento das soluções e compreensão do desafio House Kaggle;
 6. Explicação detalhada do desenvolvimento das soluções, avaliação, otimização e submissão ao Kaggle utilizando comentários no código;
 
+
 A escrita do texto deve ser clara, precisa e livre de erros ortográficos. Será descontado até 20% dos pontos caso sejam encontrados erros de ortografia.
 
 Avançado (9,1 - 10): cumpriu todos os 6 itens descritos acima;
@@ -24,3 +25,40 @@ Intermediário (7,1 - 9): cumpriu 5 dos 6 itens descritos acima;
 Básico (4,1 - 7): cumpriu 4 dos 6 itens descritos acima;
 
 Insuficiente (0 - 4): cumpriu menos que 3 itens descritos acima.
+
+## Compreensão do desafio House Kaggle
+
+O desafio propõe que sejam criados modelos preditivos com Python ou R que façam a previsão do preço de casas com base em variáveis como características físicas e localização.
+
+## Implementação das soluções e utilização de técnicas, algoritmos e biblioteMachinecas
+
+O código do desafio apresenta a implementação de técnicas como a preparação dos dados e a aplicação de modelos como como KNN, SVM, árvores de decisão, entre outros.
+
+## Diferenças entre os Modelos e Sugestões para Melhoria
+
+KNN, Ridge, Random Forest, SVR, Decision Tree, Ensemble (VotingRegressor / StackingRegressor), XGBoost (Cross-Validation / Early Stopping):
+
+Pré-processamento e caching em memória são aplicados em todos os modelos. A busca em grade é realizada para otimização dos hiperparâmetros no KNN e SVR. A validação cruzada é comum, geralmente usando 5 folds, exceto no KNN com 3 folds e no Ridge com 5 folds e métrica RMSE.
+
+## Sugestões de Melhoria Gerais:
+
+Ridge: Busca mais abrangente de hiperparâmetros. Feature engineering e análise de resíduos.
+
+KNN: Experimentação com outros modelos de regressão. Aumento de folds na validação cruzada.
+
+SVR: Experimentação com outros modelos de regressão. Cross-validation folds e experimentação com outros modelos.
+
+Ensembles: Ensemble weight tuning e avaliação de modelos individuais.
+
+StackingRegressor: Experimentação com outros modelos de regressão.
+
+Random Forest: Avaliação de modelos individuais e identificação/tratamento de outliers.
+
+Decision Tree: Otimização dos hiperparâmetros e tratamento de outliers.
+
+XGBoost (Early Stopping): Análise de resíduos e experimentação com outros algoritmos.
+
+XGBoost (Cross-Validation): Feature engineering.
+
+
+
